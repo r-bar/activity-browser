@@ -2,10 +2,19 @@
 
 Launch a browser dependant on the current KDE activity in use.
 
+
+## Installing
+Clone the repository, change directory to the project root and run `make
+install`. The program will be installed in the user's home directory by default.
+To specify an alternate install location set the `INSTALL_PATH` environment
+variable.
+
+
 ## Usage
 
 Before this script will be useful you will first need to setup the KDE
 activities you want to use and create the corresponding browser profiles.
+
 
 ### Creating Profiles
 
@@ -14,6 +23,7 @@ Navigate to [about:profiles](about:profiles) and click the "Create a new
 profile" button to create a new profile. After you are done creating profiles
 make sure the global default session is set using the "Set as default profile"
 below the corresponding profile entry.
+
 
 ### Setting the default browser to use
 ```
