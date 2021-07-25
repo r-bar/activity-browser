@@ -1,0 +1,22 @@
+[Desktop Entry]
+Name=Activity Browser
+GenericName=Activity Web Browser
+Comment=Browse with a specific profile depending on current KDE activity
+Exec=activity-browser %u
+Icon=web-browser
+Terminal=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true
+StartupWMClass=Nightly
+Categories=Network;WebBrowser;
+Keywords=web;browser;internet;
+Actions=new-window;new-private-window;
+
+[Desktop Action new-window]
+Name=New Window
+Exec=activity-browser %u
+
+[Desktop Action new-private-window]
+Name=New Private Window
+Exec=/opt/firefox-nightly/firefox --private %u
